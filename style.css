@@ -1,0 +1,11 @@
+body{
+    background-color: #a179fc;
+    color: white;
+    font-family: 'Crimson Text', serif;
+}
+
+.weatherInfo{
+    color: black;
+    background-color: white;
+    width: 500px;
+}
