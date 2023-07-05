@@ -18,7 +18,7 @@ button.addEventListener('click', async()=>{
     output.innerHTML=`
         <h1 id="location">Location: ${cityName}, ${region}</h1>
         <h2 id="localTime">Local Time: ${localTime}</h2>
-        <h2 id="temp">Current Temperature (°F): ${temp}</h2>
+        <h2 id="temp">Current Temperature: ${temp}(°F)</h2>
         <h2 id="humidity">Humidity: ${humidity}</h2>
     `
 })
