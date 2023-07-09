@@ -15,10 +15,14 @@ button.addEventListener('click', async()=>{
     const localTime = cityOutput.data.location.localtime;
     const temp = cityOutput.data.current.temp_f;
     const humidity = cityOutput.data.current.humidity;
+    const image = cityOutput.data.current.condition.icon;
+    console.log(image)
     output.innerHTML=`
+        <img src = '${image}'>
         <h1 id="location">Location: ${cityName}, ${region}</h1>
         <h2 id="localTime">Local Time: ${localTime}</h2>
         <h2 id="temp">Current Temperature: ${temp}(°F)</h2>
         <h2 id="humidity">Humidity: ${humidity}</h2>
+        
     `
 })
